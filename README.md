@@ -11,6 +11,7 @@ Financial fraud detection requires balancing two competing goals: catching fraud
 ---
 
 ## Pipeline Architecture
+```
 Load Transactions (CSV)
 ↓
 Build User Profiles (behavioural baselines per user)
@@ -22,7 +23,7 @@ Risk Scoring (weighted heuristic score)
 Model Training (Random Forest Classifier)
 ↓
 Decision Engine (ALLOW / STEP_UP_AUTH / BLOCK)
-
+```
 ---
 
 ## Components
@@ -77,6 +78,7 @@ Converts risk scores into real-world actions:
 ---
 
 ## Project Structure
+```
 Adaptive-fintech-fraud-detection/
 ├── data/
 │   └── transactions.csv
@@ -92,7 +94,7 @@ Adaptive-fintech-fraud-detection/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## Setup & Installation
